@@ -17,8 +17,7 @@
       <ListView ItemsSource="{x:Static local:App.PhoneNumbers}">
         <ListView.ItemTemplate>
           <DataTemplate>
-            <TextCell Text="{Binding Key}"
-             Detail="{Binding Value}" />
+            <TextCell Text="{Binding OriginalNumber}" Detail="{Binding TanslatedNumber}" />
           </DataTemplate>
         </ListView.ItemTemplate>
       </ListView>

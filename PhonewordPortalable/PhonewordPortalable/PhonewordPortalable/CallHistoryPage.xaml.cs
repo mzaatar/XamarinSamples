@@ -12,7 +12,7 @@ namespace PhonewordPortalable
 
         async void OnClear(object sender, EventArgs e)
         {
-            if (App.PhoneNumbers.Count > 0)
+            if (App.PhoneNumbersModel.Count > 0)
             {
                 if (await DisplayAlert(
                          "Clear history",
@@ -20,8 +20,8 @@ namespace PhonewordPortalable
                          "Yes",
                          "No"))
                 {
-                    App.PhoneNumbers.Clear();
-                    await Navigation.PopAsync();
+                    App.PhoneNumbersModel.Clear();
+                    //await Navigation.PopAsync();
                 }
             }
             else

@@ -45,6 +45,8 @@
     <Compile Include="CallHistoryPage.xaml.cs">
       <DependentUpon>CallHistoryPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Phone.cs" />
+    <Compile Include="Model\PhoneNumbers.cs" />
     <Compile Include="PhoneTranslator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
