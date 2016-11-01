@@ -50,5 +50,9 @@ namespace PhonewordPortalable
         {
             await Navigation.PushAsync(new CallHistoryPage());
         }
+        async void OnAbout(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AboutPage());
+        }
     }
 }
