@@ -40,11 +40,7 @@ namespace PhonewordPortalable
                 var dialer = DependencyService.Get<IDialer>();
                 if (dialer != null)
                 {
-                    if (App.PhoneNumbers.ContainsKey(originalNumber))
-                    {
-                        App.PhoneNumbers.Remove(originalNumber);
-                    }
-                    App.PhoneNumbers.Add(originalNumber,translatedNumber);
+                    App.PhoneNumbersModel.Add(originalNumber, translatedNumber);
                     dialer.Dial(translatedNumber);
                 }
             }

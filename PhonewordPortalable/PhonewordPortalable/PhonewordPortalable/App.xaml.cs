@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -7,13 +8,14 @@ namespace PhonewordPortalable
 {
     public partial class App : Application
     {
-        public static Dictionary<string,string> PhoneNumbers { get; set; }
-
+        public static PhoneNumbersViewModel PhoneNumbersModel;
+        public static ObservableCollection<Phone> PhoneNumbers;
         public App()
         {
             InitializeComponent();
-            
-            PhoneNumbers = new Dictionary<string, string>();
+
+            PhoneNumbersModel = new PhoneNumbersViewModel();
+            PhoneNumbers = PhoneNumbersModel.PhoneNumbers;
             MainPage = new NavigationPage(new MainPage());
         }
 
