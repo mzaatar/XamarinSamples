@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿using System.Reflection;
 using Xamarin.Forms;
 
 namespace Greetings
@@ -11,7 +7,13 @@ namespace Greetings
     {
         public App()
         {
-            MainPage = new GreetingsPage();
+            //MainPage = new GreetingsPage();
+            //MainPage = new ReflectedColorsPage();
+            //MainPage = new FramedTextPage();
+            //MainPage = new SizedBoxViewPage();
+            // MainPage = new ColorBlocksPage();
+
+            MainPage = new BlackCatPage();
         }
 
         protected override void OnStart()
