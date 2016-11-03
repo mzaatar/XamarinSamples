@@ -37,6 +37,10 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="BlackCatPage.cs" />
+    <Compile Include="Chapter6\ButtonLambdasPage.cs" />
+    <Compile Include="Chapter6\ButtonLoggerPage.cs" />
+    <Compile Include="Chapter6\SimplestKeypadPage.cs" />
+    <Compile Include="Chapter6\TwoButtonsPage.cs" />
     <Compile Include="ColorBlocksPage.cs" />
     <Compile Include="EmpiricalFontSizePage.cs" />
     <Compile Include="EstimatedFontSizePage.cs" />

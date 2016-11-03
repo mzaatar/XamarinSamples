@@ -5,6 +5,8 @@ namespace Greetings
 {
     public class App : Application
     {
+        public string DisplayLabelText { set; get; }
+        const string displayLabelText = "displayLabelText";
         public App()
         {
             //MainPage = new GreetingsPage();
@@ -18,7 +20,18 @@ namespace Greetings
             //MainPage = new MetricalBoxViewPage();
             //MainPage = new FontSizesPage();
             //MainPage = new FitToSizeClockPage();
-            MainPage = new EmpiricalFontSizePage();
+            //MainPage = new EmpiricalFontSizePage();
+
+            //MainPage = new Chapter6.ButtonLoggerPage();
+            //MainPage = new Chapter6.TwoButtonsPage();
+            //MainPage = new Chapter6.ButtonLambdasPage();
+
+
+            if (Properties.ContainsKey(displayLabelText))
+            {
+                DisplayLabelText = (string)Properties[displayLabelText];
+            }
+            MainPage = new Chapter6.SimplestKeypadPage();
         }
 
         protected override void OnStart()
@@ -29,6 +42,7 @@ namespace Greetings
         protected override void OnSleep()
         {
             // Handle when your app sleeps
+            Properties[displayLabelText] = DisplayLabelText;
         }
 
         protected override void OnResume()
