@@ -38,11 +38,17 @@
     <Compile Include="App.cs" />
     <Compile Include="BlackCatPage.cs" />
     <Compile Include="ColorBlocksPage.cs" />
+    <Compile Include="EmpiricalFontSizePage.cs" />
+    <Compile Include="EstimatedFontSizePage.cs" />
+    <Compile Include="FitToSizeClockPage.cs" />
+    <Compile Include="FontSizesPage.cs" />
     <Compile Include="FramedTextPage.cs" />
+    <Compile Include="MetricalBoxViewPage.cs" />
     <Compile Include="ReflectedColorsPage.cs" />
     <Compile Include="GreetingsPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SizedBoxViewPage.cs" />
+    <Compile Include="WhatSizePage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">

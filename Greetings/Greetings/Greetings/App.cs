@@ -13,7 +13,12 @@ namespace Greetings
             //MainPage = new SizedBoxViewPage();
             // MainPage = new ColorBlocksPage();
 
-            MainPage = new BlackCatPage();
+            //MainPage = new BlackCatPage();
+            //MainPage = new WhatSizePage();
+            //MainPage = new MetricalBoxViewPage();
+            //MainPage = new FontSizesPage();
+            //MainPage = new FitToSizeClockPage();
+            MainPage = new EmpiricalFontSizePage();
         }
 
         protected override void OnStart()
