@@ -1,12 +1,11 @@
-﻿using System.Reflection;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace Greetings
 {
     public class App : Application
     {
-        public string DisplayLabelText { set; get; }
-        const string displayLabelText = "displayLabelText";
+        //public string DisplayLabelText { set; get; }
+        //const string displayLabelText = "displayLabelText";
         public App()
         {
             //MainPage = new GreetingsPage();
@@ -27,11 +26,13 @@ namespace Greetings
             //MainPage = new Chapter6.ButtonLambdasPage();
 
 
-            if (Properties.ContainsKey(displayLabelText))
-            {
-                DisplayLabelText = (string)Properties[displayLabelText];
-            }
-            MainPage = new Chapter6.SimplestKeypadPage();
+            //if (Properties.ContainsKey(displayLabelText))
+            //{
+            //    DisplayLabelText = (string)Properties[displayLabelText];
+            //}
+            //MainPage = new Chapter6.SimplestKeypadPage();
+
+            MainPage = new Chapter8.MonkeyTapPage();
         }
 
         protected override void OnStart()
@@ -42,7 +43,7 @@ namespace Greetings
         protected override void OnSleep()
         {
             // Handle when your app sleeps
-            Properties[displayLabelText] = DisplayLabelText;
+            //Properties[displayLabelText] = DisplayLabelText;
         }
 
         protected override void OnResume()
